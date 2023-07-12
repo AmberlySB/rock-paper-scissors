@@ -25,7 +25,6 @@ function getComputerChoice (){
 //compare user choice to computer choice
 //declare winner based on comparison result
 function playRound (playerSelection, computerSelection) {
-    //console.log(computerChoice);
     if (playerSelection.toLowerCase() === "rock") {
         if (computerSelection === "paper") {
             console.log("You lose! Paper beats rock!");
@@ -75,9 +74,6 @@ function playRound (playerSelection, computerSelection) {
         }
     }
 }
-
-//console.log(playRound(getPlayerChoice(), getComputerChoice()));
-
 
 //make variable to store results to keep score
 let playerScore = 0;
