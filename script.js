@@ -28,13 +28,13 @@ function playRound (playerSelection, computerSelection) {
     //console.log(computerChoice);
     if (playerSelection.toLowerCase() === "rock") {
         if (computerSelection === "paper") {
-            return "You lose! Paper beats rock!";
+            console.log("You lose! Paper beats rock!");
         }
         else if (computerSelection === "scissors") {
-            return "You win! Rock beats Scissors!";
+            console.log("You win! Rock beats Scissors!");
         }
         else {
-            return "It's a draw!";
+            console.log("It's a draw!");
         }
     }
     else if (playerSelection.toLowerCase() === "paper") {
@@ -61,9 +61,17 @@ function playRound (playerSelection, computerSelection) {
     }
 }
 
-console.log(playRound(getPlayerChoice(), getComputerChoice()));
+//console.log(playRound(getPlayerChoice(), getComputerChoice()));
 
 
 //make variable to store results to keep score
 
 //repeat process until five rounds have been played
+
+function game() {
+    for (let i = 0; i < 5; i++) {
+        playRound(getPlayerChoice(), getComputerChoice());
+    }
+}
+
+console.log(game());
