@@ -81,19 +81,19 @@ let computerScore = 0;
 
 //repeat process until five rounds have been played
 
-function game() {
-    for (let i = 0; i < 5; i++) {
-        playRound(getPlayerChoice(), getComputerChoice());
-    }
-    if (playerScore > computerScore) {
-        console.log("CONGRATULATIONS! You win the game!")
-    }
-    else if (computerScore > playerScore) {
-        console.log("SORRY! Better luck next time!")
-    }
-    else{
-        console.log("Time for a tie-breaker, play again!")
-    }
-}
+//function game() {
+//    for (let i = 0; i < 5; i++) {
+//        playRound(getPlayerChoice(), getComputerChoice());
+//    }
+//    if (playerScore > computerScore) {
+//        console.log("CONGRATULATIONS! You win the game!")
+//    }
+//    else if (computerScore > playerScore) {
+//        console.log("SORRY! Better luck next time!")
+//    }
+//    else{
+//        console.log("Time for a tie-breaker, play again!")
+//    }
+//}
 
-console.log(game());
+//console.log(game());
