@@ -36,7 +36,7 @@ function getComputerChoice (){
 //compare player choice to computer choice
 //declare winner based on comparison result
 function playRound (playerSelection, computerSelection) {
-    if (playerSelection.toLowerCase() === "rock") {
+    if (playerSelection === "rock") {
         if (computerSelection === "paper") {
             message.textContent = "You lose! Paper beats rock!";
             computerScore = computerScore + 1;
@@ -51,7 +51,7 @@ function playRound (playerSelection, computerSelection) {
             message.textContent = "It's a draw!";
         }
     }
-    else if (playerSelection.toLowerCase() === "paper") {
+    else if (playerSelection === "paper") {
         if (computerSelection === "scissors") {
             message.textContent = "You lose! Scissors beats Paper!";
             computerScore = computerScore + 1;
@@ -66,7 +66,7 @@ function playRound (playerSelection, computerSelection) {
             message.textContent = "It's a draw!";
         }
     }
-    else if (playerSelection.toLowerCase() === "scissors") {
+    else if (playerSelection === "scissors") {
         if (computerSelection === "rock") {
             message.textContent = "You lose! Rock beats Scissors!";
             computerScore = computerScore + 1;
