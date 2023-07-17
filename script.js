@@ -101,6 +101,19 @@ function playRound (playerSelection, computerSelection) {
             console.log("Player Score: " + playerScore + " | Computer Score: " + computerScore)
         }
     }
+    if (playerScore === 5 || computerScore === 5) {
+        document.addEventListener('click', gameOver, true);
+        function gameOver(e) {
+         e.stopPropagation();
+        e.preventDefault();
+        if (playerScore === 5) {
+            message.textContent = "Gameover, You Won!"
+        }
+        else {
+            message.textContent = "Gameover, You Lost!"
+        }
+        }
+    }
 }
 
 //make variable to store results to keep score
