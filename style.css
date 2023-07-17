@@ -10,8 +10,12 @@ h1 {
 
 button {
     border-radius: 40px;
-    border: 0;
+    border: solid 4px;
     margin: 10px;
+}
+button:hover {
+    background-color: #93E9BE;
+    transform: scale(1.1);
 }
 
 p {
@@ -32,9 +36,16 @@ p {
     align-items: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    flex-direction: column;
 }
 
-.rock {
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/*.rock {
     background-color: #A7C7E7;
 }
 
@@ -44,6 +55,11 @@ p {
 
 .scissors {
     background-color: #FFFFD8;
+}*/
+
+.message {
+    font-size: 30px;
+    color: white;
 }
 
 #score {
@@ -80,4 +96,12 @@ p {
     align-self: center;
     margin-right: 10px;
     flex: none;
+}
+
+.player-clicked {
+    background-color: #93E9BE;
+}
+
+.computer-clicked {
+    border-color: red;
 }
