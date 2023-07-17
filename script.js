@@ -1,9 +1,10 @@
 // Ask player for their choice
-function getPlayerChoice (){
-    let playerChoice = prompt ("Please choose one: Rock, Paper, or Scissors", "")
-    console.log(playerChoice);
-    return playerChoice;
-}
+let playerChoice;
+//function getPlayerChoice (){
+//    playerChoice = prompt ("Please choose one: Rock, Paper, or Scissors", "")
+//    console.log(playerChoice);
+//    return playerChoice;
+//}
 
 //get computer choice
 function getComputerChoice (){
@@ -97,3 +98,6 @@ let computerScore = 0;
 //}
 
 //console.log(game());
+
+const rock = document.querySelector('.rock');
+rock.onclick = () =>  playRound("rock", getComputerChoice());
